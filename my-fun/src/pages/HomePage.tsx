@@ -10,14 +10,85 @@ const HomePage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Card
-          title={"yes bitch"}
-          content={
-            "This is a fuck load of content that I am adding to test just how good or not good this is"
-          }
-          //plug <Image> as child prop
-        />
+      <main className=" flex relative">
+        <div className="bg-white flex w-0 lg:w-96 h-screen justify-start md:pl-4 invisible lg:visible flex-col">
+          <h1 className="text-4xl font-ubuntu font-semibold">Dashboard</h1>
+          <ul>
+            <li>
+              <button>location</button>
+            </li>
+            <li>
+              <button>location</button>
+            </li>
+            <li>
+              <button>Location</button>
+            </li>
+            <li>
+              <button>Location</button>
+            </li>
+          </ul>
+        </div>
+        {/* //card content// */}
+        <div className="flex-auto h-screen overflow-y-scroll grid grid-cols-1 xl:grid-cols-2 place-items-center space-y-4">
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+        </div>
+        <nav className="absolute bottom-0 w-full bg-pink-800 lg:invisible">
+          <ul className="flex">
+            <li>
+              <button>location</button>
+            </li>
+            <li>
+              <button>location</button>
+            </li>
+            <li>
+              <button>Location</button>
+            </li>
+            <li>
+              <button>Location</button>
+            </li>
+          </ul>
+        </nav>
       </main>
     </>
   );
