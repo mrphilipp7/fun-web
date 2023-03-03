@@ -29,7 +29,7 @@ const HomePage = () => {
           </ul>
         </div>
         {/* //card content// */}
-        <div className="flex-auto h-screen overflow-y-scroll grid grid-cols-1 xl:grid-cols-2 place-items-center space-y-4">
+        <div className="flex-auto h-screen overflow-y-scroll grid grid-cols-1 xl:grid-cols-2 place-items-center space-y-4 ">
           <header className="static top-0 w-full bg-white/80 backdrop-blur-sm  lg:hidden resize-none">
             Dashboard
           </header>
