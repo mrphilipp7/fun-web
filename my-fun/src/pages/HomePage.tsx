@@ -11,7 +11,13 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Card />
+        <Card
+          title={"yes bitch"}
+          content={
+            "This is a fuck load of content that I am adding to test just how good or not good this is"
+          }
+          //plug <Image> as child prop
+        />
       </main>
     </>
   );
