@@ -11,7 +11,7 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" flex relative">
-        <div className="bg-white flex w-0 lg:w-96 h-screen justify-start md:pl-4 invisible lg:visible flex-col">
+        <div className="bg-white/80 lg:flex w-0 lg:w-96 h-screen justify-start md:pl-4  lg:visible flex-col backdrop-blur-sm hidden">
           <h1 className="text-4xl font-ubuntu font-semibold">Dashboard</h1>
           <ul>
             <li>
@@ -30,6 +30,9 @@ const HomePage = () => {
         </div>
         {/* //card content// */}
         <div className="flex-auto h-screen overflow-y-scroll grid grid-cols-1 xl:grid-cols-2 place-items-center space-y-4">
+          <header className="static top-0 w-full bg-white/80 backdrop-blur-sm  lg:hidden resize-none">
+            Dashboard
+          </header>
           <Card
             title={"yes bitch"}
             content={
@@ -73,7 +76,7 @@ const HomePage = () => {
             //plug <Image> as child prop
           />
         </div>
-        <nav className="absolute bottom-0 w-full bg-pink-800 lg:invisible">
+        <nav className="absolute bottom-0 w-full bg-white/80 backdrop-blur-sm  lg:invisible resize-none">
           <ul className="flex">
             <li>
               <button>location</button>

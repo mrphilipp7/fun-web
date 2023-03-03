@@ -29,8 +29,8 @@ const Card = ({ children, title, content }: Props) => {
   };
 
   return (
-    <div className=" bg-white w-96 border-4 border-white rounded-md ">
-      <div className="w-full h-96 bg-red-500 rounded-md">
+    <div className=" bg-white w-80 sm:w-96 border-4 border-white rounded-md ">
+      <div className="w-full h-80 sm:h-96 bg-red-500 rounded-md">
         {/* //window frame */}
         {children}
       </div>
