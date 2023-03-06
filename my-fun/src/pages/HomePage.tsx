@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Card from "@/components/Card";
+import { HomeIcon } from "@heroicons/react/20/solid";
 const HomePage = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" flex relative">
+        {/* //appear on big screen// */}
         <div className="bg-white/80 lg:flex w-0 lg:w-96 h-screen justify-start md:pl-4  lg:visible flex-col backdrop-blur-sm hidden">
           <h1 className="text-4xl font-ubuntu font-semibold">Dashboard</h1>
           <ul>
@@ -30,8 +32,11 @@ const HomePage = () => {
         </div>
         {/* //card content// */}
         <div className="flex-auto h-screen overflow-y-scroll grid grid-cols-1 xl:grid-cols-2 place-items-center space-y-4 ">
-          <header className="static top-0 w-full bg-white/80 backdrop-blur-sm  lg:hidden resize-none">
-            Dashboard
+          {/* //appear on small screen// */}
+          <header className="static top-0 w-full bg-white/40 backdrop-blur-sm  lg:hidden resize-none text-center">
+            <p className="text-4xl text-white font-bold font-ubuntu py-2">
+              Dashboard
+            </p>
           </header>
           <Card
             title={"yes bitch"}
@@ -75,23 +80,16 @@ const HomePage = () => {
             }
             //plug <Image> as child prop
           />
+          <nav className="sticky bottom-0 w-full bg-white/40 backdrop-blur-sm  lg:invisible resize-none">
+            <ul className="flex justify-center">
+              <li>{/* <button>location</button> */}</li>
+              <li>
+                <HomeIcon className="w-14 h-14 fill-white  border-black border-2 bg-black rounded-full p-1 active:bg-blue-100  active:duration-150 ease-in-out" />
+              </li>
+              <li></li>
+            </ul>
+          </nav>
         </div>
-        <nav className="absolute bottom-0 w-full bg-white/80 backdrop-blur-sm  lg:invisible resize-none">
-          <ul className="flex">
-            <li>
-              <button>location</button>
-            </li>
-            <li>
-              <button>location</button>
-            </li>
-            <li>
-              <button>Location</button>
-            </li>
-            <li>
-              <button>Location</button>
-            </li>
-          </ul>
-        </nav>
       </main>
     </>
   );
