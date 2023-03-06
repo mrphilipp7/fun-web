@@ -14,20 +14,39 @@ const HomePage = () => {
       </Head>
       <main className=" flex relative">
         {/* //appear on big screen// */}
-        <div className="bg-white/80 lg:flex w-0 lg:w-96 h-screen justify-start md:pl-4  lg:visible flex-col backdrop-blur-sm hidden">
-          <h1 className="text-4xl font-ubuntu font-semibold">Dashboard</h1>
-          <ul>
+        <div className="bg-white/40 lg:flex w-0 lg:w-96 h-screen justify-start md:pl-4  lg:visible flex-col backdrop-blur-sm hidden">
+          <ul className="flex flex-col space-y-12 mt-12">
             <li>
-              <button>location</button>
+              <h1 className="text-4xl font-ubuntu font-semibold mb-2 ml-2 text-white">
+                Dashboard
+              </h1>
+            </li>
+            <li className="pr-4">
+              <Link href="#">
+                <button className=" hover:text-black w-full py-2 bg-transparent text-slate-800 tracking-wide font-medium  hover:bg-white/30 active:opacity-70 font-ubuntu rounded-md text-left flex items-center">
+                  <HomeIcon className="h-8 w-8 fill-white mx-2 " />
+
+                  <p className="font-ubuntu text-lg text-white ">Home</p>
+                </button>
+              </Link>
             </li>
             <li>
-              <button>location</button>
+              <Link href="#">
+                <button className="w-full py-2 bg-transparent text-slate-800 tracking-wide font-medium  hover:bg-white/80 active:opacity-70 font-ubuntu rounded-md text-left flex items-center">
+                  <HomeIcon className="h-8 w-8 fill-slate-800 " />
+
+                  <p className="font-ubuntu text-lg text-slate-800">Home</p>
+                </button>
+              </Link>
             </li>
             <li>
-              <button>Location</button>
-            </li>
-            <li>
-              <button>Location</button>
+              <Link href="#">
+                <button className="w-full py-2 bg-transparent text-slate-800 tracking-wide font-medium  hover:bg-white/80 active:opacity-70 font-ubuntu rounded-md text-left flex items-center">
+                  <HomeIcon className="h-8 w-8 fill-slate-800 " />
+
+                  <p className="font-ubuntu text-lg text-slate-800">Home</p>
+                </button>
+              </Link>
             </li>
           </ul>
         </div>
