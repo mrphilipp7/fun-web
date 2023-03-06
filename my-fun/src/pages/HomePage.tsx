@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Card from "@/components/Card";
 import { HomeIcon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 const HomePage = () => {
   return (
     <>
@@ -84,7 +85,9 @@ const HomePage = () => {
             <ul className="flex justify-center">
               <li>{/* <button>location</button> */}</li>
               <li>
-                <HomeIcon className="w-14 h-14 fill-white  border-black border-2 bg-black rounded-full p-1 active:bg-blue-100  active:duration-150 ease-in-out" />
+                <Link href={"/HomePage"}>
+                  <HomeIcon className="w-14 h-14 fill-white hover:opacity-80 active:opacity-70  border-transparent border-2 bg-transparent rounded-full p-1  ease-out cursor-pointer" />
+                </Link>
               </li>
               <li></li>
             </ul>
