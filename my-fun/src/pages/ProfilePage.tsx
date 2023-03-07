@@ -16,13 +16,13 @@ import NavBarMenu from "../components/NavBarMenu";
 import NavBarSearch from "../components/NavBarSearch";
 import { useState } from "react";
 
-const HomePage = () => {
+const ProfilePage = () => {
   const [showSearchBar, setShowSearchBar] = useState(false);
   return (
     <>
       <Head>
         {" "}
-        <title>Home Page</title>
+        <title>Profile Page</title>
         <meta name="description" content="Home page of website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -77,7 +77,7 @@ const HomePage = () => {
         <div className="flex-auto h-screen overflow-y-scroll grid grid-cols-1 xl:grid-cols-2 place-items-center space-y-4 ">
           <header className="static top-0 w-full bg-white/40 backdrop-blur-sm  lg:hidden justify-between items-center resize-none flex">
             <p className="text-2xl text-white font-bold font-ubuntu py-2 pl-2">
-              Home
+              Profile
             </p>
             <div className="flex space-x-2 pr-2 items-center">
               {/* <PlusIcon className="fill-white bg-pink-500 rounded-full h-10  w-10 p-2" /> */}
@@ -165,4 +165,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default ProfilePage;
