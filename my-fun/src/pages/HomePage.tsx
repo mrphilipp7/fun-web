@@ -31,10 +31,11 @@ const HomePage = () => {
         {/* //appear on big screen// */}
         <aside className="bg-white/40 lg:flex w-0 lg:w-96 h-screen justify-start md:pl-4  lg:visible flex-col backdrop-blur-sm hidden relative">
           <ul className="flex flex-col space-y-12 mt-12">
-            <li>
-              <h1 className="text-4xl font-ubuntu font-semibold mb-2 ml-2 text-white">
+            <li className="pr-4">
+              <h1 className="text-4xl font-ubuntu font-semibold mb-4 ml-2 text-white">
                 Dashboard
               </h1>
+              <NavBarSearch />
             </li>
             {/* //link to HomePage page// */}
             <li className="pr-4">
@@ -48,20 +49,28 @@ const HomePage = () => {
             </li>
             {/* //Link to about// */}
             <li className="pr-4">
-              <Link href="/About">
+              <Link href="/ProfilePage">
                 <button className="  w-full py-2 bg-transparent  tracking-wide font-medium  hover:bg-white/30 active:opacity-70 font-ubuntu rounded-md text-left flex items-center">
-                  <ChatBubbleBottomCenterTextIcon className="h-8 w-8 fill-white mx-2 " />
+                  <UserIcon className="h-8 w-8 fill-white mx-2 " />
 
-                  <p className="font-ubuntu text-lg text-white ">About</p>
+                  <p className="font-ubuntu text-lg text-white ">Profile</p>
                 </button>
               </Link>
             </li>
             {/* //link to fun stuff// */}
             <li className="pr-4">
-              <Link href="/FunStuff">
+              <Link href="/AlertsPage">
                 <button className="  w-full py-2 bg-transparent  tracking-wide font-medium  hover:bg-white/30 active:opacity-70 font-ubuntu rounded-md text-left flex items-center">
-                  <FaceSmileIcon className="h-8 w-8 fill-white mx-2 " />
-                  <p className="font-ubuntu text-lg text-white ">Fun Stuff</p>
+                  <BellAlertIcon className="h-8 w-8 fill-white mx-2 " />
+                  <p className="font-ubuntu text-lg text-white ">Alerts</p>
+                </button>
+              </Link>
+            </li>
+            <li className="pr-4">
+              <Link href="/MenuPage">
+                <button className="  w-full py-2 bg-transparent  tracking-wide font-medium  hover:bg-white/30 active:opacity-70 font-ubuntu rounded-md text-left flex items-center">
+                  <Bars3Icon className="h-8 w-8 fill-white mx-2 " />
+                  <p className="font-ubuntu text-lg text-white ">Menu</p>
                 </button>
               </Link>
             </li>

@@ -25,108 +25,114 @@ export default function Example() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 mt-2 w-32 origin-top-right divide-y divide-gray-100 rounded-md bg-pink-500 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className="px-1 py-1 ">
-            <Menu.Item>
-              {({ active }) => (
-                <button
-                  className={`${
-                    active
-                      ? " text-white font-ubuntu"
-                      : "text-white font-ubuntu"
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                >
-                  {active ? (
-                    <PencilSquareIcon
-                      className="mr-2 h-5 w-5 fill-white"
-                      aria-hidden="true"
-                    />
-                  ) : (
-                    <PencilSquareIcon
-                      className="mr-2 h-5 w-5 fill-white"
-                      aria-hidden="true"
-                    />
-                  )}
-                  Post
-                </button>
-              )}
-            </Menu.Item>
-          </div>
-          <div className="px-1 py-1">
-            <Menu.Item>
-              {({ active }) => (
-                <button
-                  className={`${
-                    active ? "font-ubuntu text-white" : "text-white font-ubuntu"
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                >
-                  {active ? (
-                    <BookOpenIcon
-                      className="mr-2 h-5 w-5 fill-white"
-                      aria-hidden="true"
-                    />
-                  ) : (
-                    <BookOpenIcon
-                      className="mr-2 h-5 w-5 fill-white"
-                      aria-hidden="true"
-                    />
-                  )}
-                  Story
-                </button>
-              )}
-            </Menu.Item>
-          </div>
-          <div className="px-1 py-1">
-            <Menu.Item>
-              {({ active }) => (
-                <button
-                  className={`${
-                    active
-                      ? " text-white font-ubuntu"
-                      : "text-white font-ubuntu"
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                >
-                  {active ? (
-                    <FilmIcon
-                      className="mr-2 h-5 w-5 fill-white"
-                      aria-hidden="true"
-                    />
-                  ) : (
-                    <FilmIcon
-                      className="mr-2 h-5 w-5 fill-white"
-                      aria-hidden="true"
-                    />
-                  )}
-                  Reel
-                </button>
-              )}
-            </Menu.Item>
-          </div>
-          <div className="px-1 py-1">
-            <Menu.Item>
-              {({ active }) => (
-                <button
-                  className={`${
-                    active ? "font-ubuntu text-white" : "text-white font-ubuntu"
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                >
-                  {active ? (
-                    <VideoCameraIcon
-                      className="mr-2 h-5 w-5 fill-white"
-                      aria-hidden="true"
-                    />
-                  ) : (
-                    <VideoCameraIcon
-                      className="mr-2 h-5 w-5 fill-white"
-                      aria-hidden="true"
-                    />
-                  )}
-                  Live
-                </button>
-              )}
-            </Menu.Item>
-          </div>
-        </Menu.Items>
+        <div style={{ position: "relative", zIndex: 1 }}>
+          <Menu.Items className="absolute right-0 mt-2 w-32 origin-top-right divide-y divide-gray-100 rounded-md bg-pink-500 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <div className="px-1 py-1 ">
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active
+                        ? " text-white font-ubuntu"
+                        : "text-white font-ubuntu"
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                    {active ? (
+                      <PencilSquareIcon
+                        className="mr-2 h-5 w-5 fill-white"
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <PencilSquareIcon
+                        className="mr-2 h-5 w-5 fill-white"
+                        aria-hidden="true"
+                      />
+                    )}
+                    Post
+                  </button>
+                )}
+              </Menu.Item>
+            </div>
+            <div className="px-1 py-1">
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active
+                        ? "font-ubuntu text-white"
+                        : "text-white font-ubuntu"
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                    {active ? (
+                      <BookOpenIcon
+                        className="mr-2 h-5 w-5 fill-white"
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <BookOpenIcon
+                        className="mr-2 h-5 w-5 fill-white"
+                        aria-hidden="true"
+                      />
+                    )}
+                    Story
+                  </button>
+                )}
+              </Menu.Item>
+            </div>
+            <div className="px-1 py-1">
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active
+                        ? " text-white font-ubuntu"
+                        : "text-white font-ubuntu"
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                    {active ? (
+                      <FilmIcon
+                        className="mr-2 h-5 w-5 fill-white"
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <FilmIcon
+                        className="mr-2 h-5 w-5 fill-white"
+                        aria-hidden="true"
+                      />
+                    )}
+                    Reel
+                  </button>
+                )}
+              </Menu.Item>
+            </div>
+            <div className="px-1 py-1">
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active
+                        ? "font-ubuntu text-white"
+                        : "text-white font-ubuntu"
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                    {active ? (
+                      <VideoCameraIcon
+                        className="mr-2 h-5 w-5 fill-white"
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <VideoCameraIcon
+                        className="mr-2 h-5 w-5 fill-white"
+                        aria-hidden="true"
+                      />
+                    )}
+                    Live
+                  </button>
+                )}
+              </Menu.Item>
+            </div>
+          </Menu.Items>
+        </div>
       </Transition>
     </Menu>
   );
