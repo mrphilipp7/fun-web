@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useForm } from "react-hook-form";
 import { UserCircleIcon, LockClosedIcon } from "@heroicons/react/20/solid";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 //LOGIN PAGE
 export default function Home() {
@@ -86,11 +87,14 @@ export default function Home() {
                 <input type="checkbox" {...register("remember")} />
                 <p className="text-white font-ubuntu">Remember me?</p>
               </div>
-              <input
-                type="submit"
-                value="LOGIN"
-                className="w-60 py-2 bg-white text-slate-800 tracking-wide font-medium  hover:opacity-80 active:opacity-70 font-ubuntu"
-              />
+              {/* //get rid of Link and change type='submit'//current error when it does this// Link is work around // */}
+              <Link href="./HomePage">
+                <input
+                  type="button"
+                  value="LOGIN"
+                  className="w-60 py-2 bg-white text-slate-800 tracking-wide font-medium  hover:opacity-80 active:opacity-70 font-ubuntu cursor-pointer"
+                />
+              </Link>
             </form>
           </div>
         </div>

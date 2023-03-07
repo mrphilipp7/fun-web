@@ -1,23 +1,24 @@
 import Head from "next/head";
-import Card from "@/components/Card";
+import Link from "next/link";
 import {
   HomeIcon,
   ChatBubbleBottomCenterTextIcon,
   FaceSmileIcon,
 } from "@heroicons/react/24/solid";
-import Link from "next/link";
-const HomePage = () => {
+import Card from "@/components/Card";
+const About = () => {
   return (
     <>
+      {" "}
       <Head>
         {" "}
-        <title>Home Page</title>
-        <meta name="description" content="Home page of website" />
+        <title>About</title>
+        <meta name="description" content="About page of website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" flex relative">
-        {/* //appear on big screen// */}
+        {/* side bar// */}
         <aside className="bg-white/40 lg:flex w-0 lg:w-96 h-screen justify-start md:pl-4  lg:visible flex-col backdrop-blur-sm hidden relative">
           <ul className="flex flex-col space-y-12 mt-12">
             <li>
@@ -62,33 +63,56 @@ const HomePage = () => {
             <p className="font-ubuntu text-lg text-white ">Log Out</p>
           </Link>
         </aside>
-        {/* //card content// */}
         <div className="flex-auto h-screen overflow-y-scroll grid grid-cols-1 xl:grid-cols-2 place-items-center space-y-4 ">
-          {/* //appear on small screen// */}
+          {/* //appears on small screens */}
           <header className="static top-0 w-full bg-white/40 backdrop-blur-sm  lg:hidden resize-none text-center">
             <p className="text-4xl text-white font-bold font-ubuntu py-2">
-              Home
+              About
             </p>
           </header>
-          {/* p-14 sm:p-24 */}
-          <section className="backdrop-blur-xl bg-white/30 p-2 w-80 md:w-96 text-left rounded-md border-white/10 border-2 shadow-sm shadow-gray-300 font-ubuntu">
-            <p className="mb-2 text-center">Hello there,</p>
-            <p className="indent-3 mb-4">
-              My Name is Zach Philipp and I am a web developer. I have been
-              coding for fun since I was 16 years old. When I started
-              programming, I began with C++ and loved it. Once I started
-              developing websites and mobile applications, I found my true
-              passion. I enjoy taking a blank screen and makinng it come to life
-              with stunning visuals and fun interfaces.
-            </p>
-            <p className="text-center">
-              {" "}
-              "A true artist is not one who is inspired, but who inspires
-              others"
-            </p>
-            <p className="text-center"> - Salvador Dali</p>
-          </section>
-          <section>this is also mine</section>
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          <Card
+            title={"yes bitch"}
+            content={
+              "This is a fuck load of content that I am adding to test just how good or not good this is"
+            }
+            //plug <Image> as child prop
+          />
+          {/* //appears on small screens// */}
           <nav className="sticky bottom-0 w-full bg-white/40 backdrop-blur-sm  lg:invisible resize-none">
             <ul className="flex justify-evenly">
               <li>
@@ -117,4 +141,5 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default About;
+<></>;
